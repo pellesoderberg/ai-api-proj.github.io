@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ai-api-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/ai-api-proj
+      - /ai-api-proj/node_modules
