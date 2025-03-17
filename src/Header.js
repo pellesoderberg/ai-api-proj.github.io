@@ -23,8 +23,10 @@ function Header() {
             </Link>
           </li>
           <li className="assistant-indicator">
-            <FaUserAstronaut />
-            <span>Tim is ready to help!</span>
+            <Link to="/chat">
+              <FaUserAstronaut />
+              <span>Tim is ready to help!</span>
+            </Link>
           </li>
         </ul>
       </nav>
