@@ -1,35 +1,33 @@
-// Header.js
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FaPlaneDeparture, FaUserAstronaut, FaInfoCircle, FaHome } from 'react-icons/fa';
 import './Header.css';
 
 function Header() {
   return (
     <header className="header">
-      <div className="container">
-        <div className="logo">
-          <Link to="/">CheapFlights.ai</Link>
-        </div>
-        <nav className="nav">
-          <ul>
-            <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+      <div className="logo">
+        <FaPlaneDeparture className="logo-icon" />
+        <h1>CheapFlights.ai</h1>
       </div>
+      <nav className="nav">
+        <ul>
+          <li>
+            <Link to="/">
+              <FaHome /> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              <FaInfoCircle /> About
+            </Link>
+          </li>
+          <li className="assistant-indicator">
+            <FaUserAstronaut />
+            <span>Tim is ready to help!</span>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

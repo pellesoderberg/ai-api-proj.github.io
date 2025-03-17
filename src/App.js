@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
@@ -11,14 +10,14 @@ function App() {
     <Router>
       <div className="app-container">
         <Header />
-        <main className="content-container">
+        <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} My React App</p>
+          <p>&copy; {new Date().getFullYear()} CheapFlights.ai - Find your next adventure for less</p>
         </footer>
       </div>
     </Router>
