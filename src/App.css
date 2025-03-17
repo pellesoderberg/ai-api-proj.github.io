@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4a6fff;
+  --secondary-color: #05c2c9;
+  --accent-color: #ff6b6b;
+  --dark-color: #2d3748;
+  --light-color: #f8f9fa;
+  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Remove padding for chat page */
+.main-content.chat-page {
+  padding: 0;
+}
+
+button {
+  background: var(--gradient);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(74, 111, 255, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(74, 111, 255, 0.3);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
