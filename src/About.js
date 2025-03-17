@@ -10,7 +10,6 @@ function About() {
         <h1>About CheapFlights.ai</h1>
         <p>Revolutionizing how you find and book affordable travel</p>
       </div>
-      
       <div className="about-content">
         <div className="about-section">
           <h2>Our Mission</h2>
